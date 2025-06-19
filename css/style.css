@@ -1,3 +1,13 @@
+* {
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+html {
+  background-color: #EEEEEE;
+  font-size: 16px;
+}
+
 .remove-pad-marg {
   margin: 0;
   padding: 0;
@@ -42,8 +52,8 @@
 }
 
 .title>div>h1 {
-  color: #EEEEEE;
   font-size: 6rem;
+  color: #EEEEEE;
   text-shadow: 8px 4px 6px rgba(0, 0, 0, 0.45);
 }
 
@@ -94,8 +104,8 @@
   height: 100%;
   background-color: white;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  grid-template-rows: repeat(3, minmax(50px, 1fr));
   gap: 2px;
 }
 
@@ -115,6 +125,7 @@
 /* pop up style */
 
 .player-input {
+
   background: white;
   padding: 2rem;
   border-radius: 8px;
@@ -175,15 +186,41 @@
 
 }
 
-.pop-up {
+#pop-up {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.3);
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   z-index: 10;
+}
+
+
+@media (max-width: 1200px) {
+
+  .title>div>h1 {
+    font-size: 3rem;
+    color: #EEEEEE;
+    text-shadow: 8px 4px 6px rgba(0, 0, 0, 0.45);
+  }
+
+  .top-banner {
+    grid-area: 1/1/2/10;
+  }
+
+  .player-two-panel {
+    grid-area: 7/6/10/10;
+  }
+
+  .player-one-panel {
+    grid-area: 7/1/10/5;
+  }
+
+  .game-board-wrapper {
+    grid-area: 2/1/7/10;
+  }
 }
