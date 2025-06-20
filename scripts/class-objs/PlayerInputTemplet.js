@@ -60,4 +60,41 @@ export class PlayerTemplet {
         </form>
 `
   }
+
+  WinnerIs(winnerData) {
+
+
+    return `
+          
+        <form id="form-data">
+        <p id="warning" class="remove-pad-marg"></p>
+          <fieldset>
+            <label id="winner" for="player-name">${winnerData}: Has Won!</label>
+
+            <div class="button-box">
+              <button id="play-again-btn" type="button">Play Again</button>
+              <button id="reset-game-btn" type="button">Reset Game</button>
+
+            </div>
+          </fieldset>
+    `
+  }
+
+  DrawState() {
+
+    return `
+          
+        <form id="form-data">
+        <p id="warning" class="remove-pad-marg"></p>
+          <fieldset>
+            <label id="winner" for="player-name">Draw!!: Tray Again?</label>
+
+            <div class="button-box">
+              <button id="play-again-btn" type="button">Play Again</button>
+              <button id="reset-game-btn" type="button">Reset Game</button>
+
+            </div>
+          </fieldset>
+    `
+  }
 };

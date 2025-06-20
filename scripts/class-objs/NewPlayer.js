@@ -20,11 +20,11 @@ export class NewPlayer {
   }
 
   PlayerWon() {
-    return this.playerWins++;
+    this.playerWins++;
   }
 
   PlayerLost() {
-    return this.playerLoses++;
+    this.playerLoses++;
   }
 
   PlayerPieces() {

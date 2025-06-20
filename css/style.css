@@ -203,6 +203,11 @@ html {
   color: red;
 }
 
+#winner {
+  font-size: 2rem;
+  padding: 1rem;
+}
+
 
 @media (max-width: 1200px) {
 

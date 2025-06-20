@@ -1,8 +1,10 @@
 import { StartGame } from "./class-objs/GameState.js";
 
 
+
 document.addEventListener('DOMContentLoaded', () => {
 
-  StartGame()
+  StartGame();
+  console.log("I left the game?")
 
 });
