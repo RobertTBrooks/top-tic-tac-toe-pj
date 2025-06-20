@@ -215,6 +215,11 @@ html {
 
 @media (max-width: 1200px) {
 
+  .pieces {
+    max-width: 200px;
+    max-height: 200px;
+  }
+
   .title>div>h1 {
     font-size: 3rem;
     color: #EEEEEE;
