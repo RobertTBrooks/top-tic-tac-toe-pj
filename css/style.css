@@ -216,8 +216,8 @@ html {
 @media (max-width: 1200px) {
 
   .pieces {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 100px;
+    max-height: 100px;
   }
 
   .title>div>h1 {
