@@ -1,7 +1,8 @@
-document.addEventListener('DOMContentLoaded') => {
+import { StartGame } from "./class-objs/GameState.js";
 
 
-  function GameStart(player1, player2) {
+document.addEventListener('DOMContentLoaded', () => {
 
-  }
-};
+  StartGame()
+
+});

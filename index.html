@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title></title>
   <link href="css/style.css" rel="stylesheet">
-  <script src="scripts/main.js" defer></script>
+  <script type="module" src="scripts/main.js" defer></script>
 </head>
 <!-- overall body-->
 
@@ -23,13 +23,12 @@
     </div>
 
     <!-- Player one -->
-    <div class="player-one-panel panel-style">
+    <div id="player-one-panel" class="panel-style">
       <div id="player-one-title" class="player-title">
-        <h1>Player One</h1>
+        <h1 id="p1-name">Player One</h1>
         <div id="player-one-output">
-          <h1 id="player-one-score"></h1>
           <p id="player-one-wins">Total Wins!:</p>
-          <p id="pplayer-one-loses">Total Loses..:</p>
+          <p id="player-one-loses">Total Loses..:</p>
 
         </div>
 
@@ -39,29 +38,28 @@
     <!-- Game board -->
     <div class="game-board-wrapper">
 
-      <div class="game-board">
-        <div id="top-lft">top-L</div>
-        <div id="top-cnt">top-C</div>
-        <div id="top-rgt">top-R</div>
-        <div id="cnt-lft">cnt-L</div>
-        <div id="cnt-cnt">cnt-C</div>
-        <div id="cnt-rgt">cnt-R</div>
-        <div id="btm-lft">btm-L</div>
-        <div id="btm-cnt">btm-C</div>
-        <div id="btm-rgt">btm-R</div>
+      <div id="game-board">
+        <div id="top-L">top-L</div>
+        <div id="top-C">top-C</div>
+        <div id="top-R">top-R</div>
+        <div id="cnt-L">cnt-L</div>
+        <div id="cnt-C">cnt-C</div>
+        <div id="cnt-R">cnt-R</div>
+        <div id="btm-L">btm-L</div>
+        <div id="btm-C">btm-C</div>
+        <div id="btm-R">btm-R</div>
 
       </div>
     </div>
 
     <!-- Player two -->
-    <div class="player-two-panel panel-style">
+    <div id="player-two-panel" class="panel-style">
 
       <div id="player-two-title" class="player-title">
-        <h1>Player Two</h1>
+        <h1 id="p2-name">Player Two</h1>
         <div id="player-two-output">
-          <h1 id="player-two-score"></h1>
           <p id="player-two-wins">Total Wins!:</p>
-          <p id="pplayer-two-loses">Total Loses..:</p>
+          <p id="player-two-loses">Total Loses..:</p>
 
         </div>
       </div>
@@ -69,15 +67,16 @@
     <!-- Pop up -->
     <div id="pop-up">
 
-      <div class="player-input">
+      <div id="player-input">
+        <p id="warning" class="remove-pad-marg"></p>
         <form id="form-data">
           <fieldset>
             <label for="player-name">Player Name:</label>
-            <input type="text" name="player-name" value="" maxlength="16" placeholder="Enter your name">
+            <input type="text" name="player-name" minlength="3" maxlength="16" placeholder="Enter your name">
             <label for="option-select">Pick X or O's</label>
             <span>
-              X<input type="radio" name="option-select" value="X" checked>
-              O<input type="radio" name="option-select" value="O">
+              X<input class="option-select" type="radio" name="option-select" value="X" checked>
+              O<input class="option-select" type="radio" name="option-select" value="O">
             </span>
             <div class="button-box">
               <button type="submit">Submit</button>

@@ -11,8 +11,12 @@ export class NewPlayer {
     this.playerLoses = 0;
   }
 
-  GetPlayerScore() {
-    return this.playerWins, this.playerLoses;
+  GetPlayerWins() {
+    return this.playerWins;
+  }
+
+  GetPlayerLoses() {
+    return this.playerLoses;
   }
 
   PlayerWon() {
@@ -23,11 +27,12 @@ export class NewPlayer {
     return this.playerLoses++;
   }
 
-  PlayerPlaces() {
+  PlayerPieces() {
     return this.playerPieces;
   }
 
-  PlayersGameName() {
-    return `Player${this.playerNumber} ${this.playerName}`;
+  PlayerName() {
+    return this.playerName;
   }
+
 }
