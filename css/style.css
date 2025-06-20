@@ -3,6 +3,10 @@
   font-size: 1rem;
 }
 
+.pieces {
+  z-index: +10;
+}
+
 html {
   background-color: #EEEEEE;
   font-size: 16px;
