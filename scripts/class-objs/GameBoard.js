@@ -92,7 +92,7 @@ export class GameBoard {
     for (let line of Object.values(this.currentBoard)) {
       if (line[`${selected}`] == '') {
         line[`${selected}`] = `${playerPiece}`;
-        boxSelection.innerHTML = `${playerPiece}`;
+        boxSelection.innerHTML = `<img class="pieces" src="./images/${playerPiece}.png" >`;
       }
 
       let matching = 0;
